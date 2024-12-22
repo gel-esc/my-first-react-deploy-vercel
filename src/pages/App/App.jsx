@@ -1,12 +1,14 @@
 import { useRoutes, BrowserRouter } from 'react-router-dom';
 import { ShoppingCartProvider } from '../../context';
 import { HomePage, NotFound, MyOrders, DetailProduct, CartShoppingPage, OrderPage, LastOrderPage } from '../';
-import { NavBar, Footer, CheckoutSideMenu } from '../../components';
+import { NavBar, Footer, CheckoutSideMenu, } from '../../components';
 import { UsersPage } from '../UsersPage'; // Import the UsersPage component
 import './App.css';
 
+
 const AppRoutes = () => {
     let routes = useRoutes([
+ 
         { path: '/', element: <HomePage /> },
         { path: '/laptops', element: <HomePage /> },
         { path: '/tablets', element: <HomePage /> },

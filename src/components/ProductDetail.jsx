@@ -11,7 +11,7 @@ export const ProductDetail = () => {
 
     return (
         <aside
-            className={`${context.isProductDetailOpen ? 'flex' : 'hidden'}  product-detail flex-col fixed right-0 border border-black rounded-lg fondo`}
+            className={`${context.isProductDetailOpen ? 'flex' : 'hidden'}  product-detail flex-col fixed right-0 border border-black rounded-lg bg-gradient-to-r from-pink-400 via-purple-300 to-indigo-300`}
         >
             <div className='flex justify-between items-start px-5 mt-5'>
                 <div>
@@ -44,7 +44,7 @@ export const ProductDetail = () => {
                 />
             </figure>
             <p className='flex flex-col p-6'>
-                <span className='font-light text-sm'>
+                <span className='font-light text-xs'>
                     {context.showProductDetail.description?.length > 400 ? (context.showProductDetail.description.substring(0, 400)) + '...' : context.showProductDetail.description}
                 </span>
             </p>

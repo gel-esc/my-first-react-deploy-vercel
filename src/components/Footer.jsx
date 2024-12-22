@@ -28,7 +28,7 @@ export const Footer = () => {
     }, []);
 
     return (
-        <div className='bg-gradient-to-r from-pink-400 via-purple-300 to-indigo-300 fondo fixed bottom-0 w-full'>
+        <div className='bg-gradient-to-r from-pink-400 via-purple-300 to-indigo-300 fixed bottom-0 w-full'>
             <div className='flex justify-center items-center mt-2 cursor-pointer text-m'>
                 {isVisible && (
                     <div
